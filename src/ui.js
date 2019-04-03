@@ -9,6 +9,7 @@ class UI {
     }
     showPosts(posts) {
       let output = '';
+      
       posts.forEach((post) => {
         output += `
           <div class="card mb-3">

@@ -18,11 +18,11 @@ document.querySelector('.card-form').addEventListener('click', cancelEdit);
 
 // Get Posts
 function getPosts() {
-  http
-    .get('http://localhost:3000/posts')
+  http.get('http://localhost:3000/posts')
     .then(data => ui.showPosts(data))
     .catch(err => console.log(err));
 }
+
 // Submit Post
 function submitPost() {
   const title = document.querySelector('#title').value;
@@ -58,6 +58,7 @@ function submitPost() {
       })
       .catch(err => console.log(err));
     }
+
   }
 }
 
